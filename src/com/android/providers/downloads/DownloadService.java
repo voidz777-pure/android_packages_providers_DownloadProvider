@@ -383,6 +383,7 @@ public class DownloadService extends Service {
 
                     deleteFileIfExists(info.mFileName);
                     resolver.delete(info.getAllDownloadsUri(), null, null);
+                    staleIds.add(info.mId);
 
                 } else {
                     // Kick off download task if ready
