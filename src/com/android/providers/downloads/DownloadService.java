@@ -366,7 +366,6 @@ public class DownloadService extends Service {
             final int idColumn = cursor.getColumnIndexOrThrow(Downloads.Impl._ID);
             while (cursor.moveToNext()) {
                 final long id = cursor.getLong(idColumn);
-                staleIds.remove(id);
 
                 DownloadInfo info = mDownloads.get(id);
                 if (info != null) {
@@ -399,6 +398,7 @@ public class DownloadService extends Service {
 
                     isActive |= activeDownload;
                     isActive |= activeScan;
+                    staleIds.remove(id);
                 }
 
                 // Keep track of nearest next action
