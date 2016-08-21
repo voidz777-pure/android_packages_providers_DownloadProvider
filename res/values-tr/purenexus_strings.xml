@@ -21,7 +21,7 @@
         individual item in the download list.  [CHAR LIMIT=24] -->
   <string name="download_paused">Duraklatıldı</string>
   <!-- Representation of download progress percentage when paused. [CHAR LIMIT=24] -->
-  <string name="download_paused_percent">Duraklatıldı, <xliff:g id="number">%d </xliff:g> <xliff:g id="percent">%% </xliff:g><xliff:g id="number"></string>
+  <string name="download_paused_percent">Duraklatıldı, <xliff:g id="number">%d </xliff:g> <xliff:g id="percent">%% </xliff:g></string>
   <!-- Representation of download progress percentage when queued. [CHAR LIMIT=24] -->
   <string name="download_queued_percent">Sıraya alınmış, <xliff:g id="number">%d </xliff:g> <xliff:g id="percent">%% </xliff:g></string>
 </resources>
